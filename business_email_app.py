@@ -1,12 +1,8 @@
 import openai
 import streamlit as st
-import os
-from dotenv import load_dotenv
-
-load_dotenv()
 
 # Load the OpenAI API key
-openai.api_key = os.getenv("API_KEY")
+openai.api_key = st.secrets["API_KEY"]
 
 # Define the prompt for GPT-3
 prompt = "Generate a business email in US English that is friendly, but still professional and appropriate for the workplace. The email topic is: "
