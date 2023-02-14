@@ -9,7 +9,7 @@ prompt = "Generate a business email in US English that is friendly, but still pr
 
 def generate_email():
     completions = openai.Completion.create(
-        engine="text-davinci-002",
+        engine="text-davinci-003",
         prompt=f"{prompt} {scenario}",
         max_tokens=1024,
         n=1,
