@@ -23,7 +23,7 @@ def generate_email():
 st.title("Business Email Generator")
 
 # Define the scenario for the business email
-scenario = st.text_input("Enter topic")
+scenario = st.text_input("Enter topic", "Ex: hi sally, when do I start work? from jim")
 
 if st.button("Generate Email"):
     email = generate_email()
